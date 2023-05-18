@@ -5,3 +5,7 @@
 {% endif %}
 {{ page.date | date: "%b %d, %Y" }}
 {{ content }}
+
+{% if page.hero %}
+	<img src="{{page.hero}}">
+{% endif %}

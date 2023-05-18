@@ -7,6 +7,6 @@ categories: technology
 
 ### This is a third level heading
 
-hero: /capture.png
+hero: /Capture.PNG
 
-![demo image](/capture.png)
+![demo image](/Capture.PNG)

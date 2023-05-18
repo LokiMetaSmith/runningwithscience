@@ -9,4 +9,4 @@ categories: technology
 
 hero: /capture.jpg
 
-![demo image](/engineering-education/assets/images/welcome/new-site.jpg)
+![demo image](/capture.jpg)

@@ -1,3 +1,20 @@
 # _config.yml
 
 title: "Jekyll Actions Demo"
+
+author:
+  name: Lawrence Kincheloe
+  email: lokimail@gmail.com
+  bio: |
+    Lawrence Kincheloe is a professional tinkerer and inventor with a Bachelor of Science degree in Computer Science from the University of Oklahoma. He has worked as an Applications and Systems Engineer for 10 years, developing designs in advertising, telecommunications, and energy. He is also a founding member of CoLaboratory Makerspace and OKC-Open Source Hardware, and has volunteered for TechJoynt, Factory Obscura and First Robotics. He has taught classes at Ohmspace and Prototek, and has participated in Robotics clubs, Maker Fairs and competitions. Lawrence is passionate about community building and has a wide breadth of knowledge that he is eager to share with others.
+
+    Lawrence currently works at Maverick Technologies, LLC as an Applications and Systems Engineer. His responsibilities include design and redesign, reverse engineering, test development, firmware programming and development, project management, consulting services, prototyping, embedded systems design, testing & material sciences, PCA support tools & software, and engineering services.
+    Some of his notable projects include:
+    Reverse engineering and supporting a natural gas chromatography detector instrumentation for iBall Instruments
+    Developing a smart phone app and IoT enabled force sensor prototype for Rheumatoid arthritis diagnosis
+    Supporting initial bringup and verification of several Smart Grid Powerline products for Hubbell Power Systems for their Versa-Tech II with internal WiFi Radio Recloser and 3Ø Programmable Resettable Sectionalizer (3Ø PRS)
+    Developing an engineering test set for evaluating magnetic reed switch performance and handling
+    Lawrence is a valuable asset to any team and is always looking for new challenges. He is a creative and innovative thinker who is passionate about his work.
+
+youtube_url: https://www.youtube.com/@LawrenceKincheloe
+business_url: https://splotch.page

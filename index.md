@@ -1,9 +1,14 @@
 ---
+layout: default
+title: Home
 ---
 
-Welcome to My Home Page
+## About Me
+{{ site.author.bio }}
 
-{% assign date = '2020-04-13T10:20:00Z' %}
+## Projects
+Coming soon!
 
-- Original date - {{ date }}
-- With timeago filter - {{ date | timeago }}
+## Links
+- [YouTube]({{ site.youtube_url }})
+- [Business]({{ site.business_url }})

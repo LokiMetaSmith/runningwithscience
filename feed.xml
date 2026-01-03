@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2026-01-03T06:54:12+00:00</updated><id>/feed.xml</id><title type="html">Jekyll Actions Demo</title><subtitle>Jekyll Actions Demo Site</subtitle><author><name>Lawrence Kincheloe</name><email>lokimail@gmail.com</email></author><entry><title type="html">The Iot Light Switch Rule</title><link href="/2025/06/02/The-IoT-Light-Switch-Rule.html" rel="alternate" type="text/html" title="The Iot Light Switch Rule" /><published>2025-06-02T00:00:00+00:00</published><updated>2025-06-02T00:00:00+00:00</updated><id>/2025/06/02/The-IoT-Light-Switch-Rule</id><content type="html" xml:base="/2025/06/02/The-IoT-Light-Switch-Rule.html"><![CDATA[<p>If your IoT device is more difficult to <strong>__</strong>_ than the light switch on the wall, then it’s too difficult.</p>
+<ul>
+  <li>Turn On</li>
+  <li>Physically secure</li>
+  <li>Replace</li>
+  <li>Keep Updated</li>
+  <li>Share with guests</li>
+</ul>
+
+<p>IoT needs to be as easy to use as existing infrastructure, before we can realize the promice of interconnectivity.</p>
+
+<p>Ways to do this vary, but generally Open Source Hardware, permissive local permissions, implementing standards, and avoiding the need to add spyware are good first steps.</p>]]></content><author><name>Lawrence Kincheloe</name><email>lokimail@gmail.com</email></author><summary type="html"><![CDATA[If your IoT device is more difficult to ___ than the light switch on the wall, then it’s too difficult. Turn On Physically secure Replace Keep Updated Share with guests IoT needs to be as easy to use as existing infrastructure, before we can realize the promice of interconnectivity.]]></summary></entry><entry><title type="html">Welcome to my new site!</title><link href="/technology/2020/09/14/A-Blog-Is-Born.html" rel="alternate" type="text/html" title="Welcome to my new site!" /><published>2020-09-14T11:37:43+00:00</published><updated>2020-09-14T11:37:43+00:00</updated><id>/technology/2020/09/14/A-Blog-Is-Born</id><content type="html" xml:base="/technology/2020/09/14/A-Blog-Is-Born.html"><![CDATA[<h3 id="this-is-a-third-level-heading">This is a third level heading</h3>
+
+<p>hero: /Capture.PNG</p>
+
+<p><img src="/Capture.PNG" alt="demo image" /></p>]]></content><author><name>Lawrence Kincheloe</name><email>lokimail@gmail.com</email></author><category term="technology" /><summary type="html"><![CDATA[This is a third level heading]]></summary></entry></feed>

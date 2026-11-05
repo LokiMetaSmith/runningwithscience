@@ -20,7 +20,7 @@ youtube_url: https://www.youtube.com/@LawrenceKincheloe
 business_url: https://splotch.page
 
 description: "Jekyll Actions Demo Site"
-url: "" # TODO: Replace with your production URL (e.g., https://example.com)
+url: "https://runningwithscience.github.io"
 
 plugins:
   - jekyll-feed

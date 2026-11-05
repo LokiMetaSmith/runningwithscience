@@ -9,6 +9,15 @@ layout: default
 		<h1 class="p-name">Untitled post</h1>
 	{% endif %}
 	<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time>
+
+	{% if page.tags and page.tags.size > 0 %}
+	<div class="tags">
+		{% for tag in page.tags %}
+			<span class="p-category">{{ tag }}</span>{% if forloop.last == false %}, {% endif %}
+		{% endfor %}
+	</div>
+	{% endif %}
+
 	<div class="e-content">
 	{{ content }}
 	</div>

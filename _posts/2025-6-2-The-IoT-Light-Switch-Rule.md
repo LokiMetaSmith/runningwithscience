@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The IoT Light Switch Rule"
+tags: [IoT, rant, electronics]
 ---
 
 If your IoT device is more difficult to _______ than the light switch on the wall, then it's too difficult.

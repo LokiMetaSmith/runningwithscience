@@ -98,3 +98,33 @@ def test_404_page_generated():
     content_div = soup.find(class_="container")
     assert content_div is not None, "Container div missing on 404 page"
     assert "404" in content_div.text, "404 text missing from 404 page content"
+
+def test_seo_meta_tags():
+    """Test that Open Graph and Twitter card meta tags are present."""
+    soup = get_soup("index.html")
+
+    # Check Open Graph tags
+    assert soup.find("meta", property="og:title") is not None, "og:title meta tag missing"
+    assert soup.find("meta", property="og:description") is not None, "og:description meta tag missing"
+    assert soup.find("meta", property="og:url") is not None, "og:url meta tag missing"
+    assert soup.find("meta", property="og:type") is not None, "og:type meta tag missing"
+
+    # Check Twitter Card tags
+    assert soup.find("meta", attrs={"name": "twitter:card"}) is not None, "twitter:card meta tag missing"
+    assert soup.find("meta", attrs={"name": "twitter:title"}) is not None, "twitter:title meta tag missing"
+    assert soup.find("meta", attrs={"name": "twitter:description"}) is not None, "twitter:description meta tag missing"
+
+def test_post_tags_p_category():
+    """Test that post pages with tags contain the p-category microformat."""
+    post_file = os.path.join(SITE_DIR, "2025", "06", "02", "The-IoT-Light-Switch-Rule.html")
+    assert os.path.exists(post_file), f"Expected post file not found: {post_file}"
+
+    with open(post_file, "r") as f:
+        soup = BeautifulSoup(f, "html5lib")
+
+    categories = soup.find_all(class_="p-category")
+    assert len(categories) > 0, "No p-category tags found on a tagged post page"
+    tag_texts = [tag.text.strip() for tag in categories]
+    assert "IoT" in tag_texts, "Expected tag 'IoT' not found in p-category elements"
+    assert "rant" in tag_texts, "Expected tag 'rant' not found in p-category elements"
+    assert "electronics" in tag_texts, "Expected tag 'electronics' not found in p-category elements"

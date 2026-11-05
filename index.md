@@ -16,6 +16,13 @@ title: Home
         <div class="p-summary">
           {{ post.excerpt }}
         </div>
+        {% if post.tags and post.tags.size > 0 %}
+        <div class="tags">
+          {% for tag in post.tags %}
+            <span class="p-category">{{ tag }}</span>{% if forloop.last == false %}, {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
         <div class="p-author h-card" hidden>
           <a class="u-url p-name" href="{{ site.url | absolute_url }}">{{ site.author.name }}</a>
         </div>

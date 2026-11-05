@@ -42,6 +42,10 @@ def test_home_page_hfeed():
         assert entry.find(class_="dt-published") is not None, "dt-published missing in h-entry"
         assert entry.find(class_="u-url") is not None, "u-url missing in h-entry"
 
+        author_card = entry.find(class_="p-author h-card")
+        assert author_card is not None, "p-author h-card missing in h-entry"
+        assert author_card.find(class_="p-name") is not None, "p-name missing in p-author h-card"
+
 def test_post_page_hentry():
     """Test that individual post pages contain the h-entry microformat."""
     # Find a post in the generated site
@@ -57,6 +61,10 @@ def test_post_page_hentry():
         assert hentry is not None, "h-entry not found on post page"
         assert hentry.find(class_="p-name") is not None, "p-name missing in post h-entry"
         assert hentry.find(class_="e-content") is not None, "e-content missing in post h-entry"
+
+        author_card = hentry.find(class_="p-author h-card")
+        assert author_card is not None, "p-author h-card missing in post h-entry"
+        assert author_card.find(class_="p-name") is not None, "p-name missing in post p-author h-card"
     else:
         pytest.fail("Could not find a generated post page to test.")
 
@@ -74,3 +82,19 @@ def test_rss_feed_generated():
     with open(feed_path, "r") as f:
         content = f.read()
         assert "<feed" in content or "<rss" in content, "feed.xml does not look like an RSS/Atom feed"
+
+def test_404_page_generated():
+    """Test that the 404 page is generated and contains default layout elements."""
+    page_path = os.path.join(SITE_DIR, "404.html")
+    assert os.path.exists(page_path), "404.html was not generated"
+
+    soup = get_soup("404.html")
+
+    # Verify it uses the default layout (checking for rel='me' links)
+    rel_me_links = soup.find_all(rel="me")
+    assert len(rel_me_links) >= 3, "Expected at least 3 rel='me' links on 404 page (from layout)"
+
+    # Verify content
+    content_div = soup.find(class_="container")
+    assert content_div is not None, "Container div missing on 404 page"
+    assert "404" in content_div.text, "404 text missing from 404 page content"

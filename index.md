@@ -16,6 +16,9 @@ title: Home
         <div class="p-summary">
           {{ post.excerpt }}
         </div>
+        <div class="p-author h-card" hidden>
+          <a class="u-url p-name" href="{{ site.url | absolute_url }}">{{ site.author.name }}</a>
+        </div>
       </li>
     {% endfor %}
   </ul>
